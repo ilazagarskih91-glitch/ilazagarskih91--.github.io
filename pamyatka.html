@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Короткая памятка о том, как эффективно искать информацию с помощью искусственного интеллекта.">
+<title>ИИ Ищи — краткая памятка</title>
+<style>
+:root{--ink:#111a28;--muted:#5f6c7d;--lime:#c4ff4d;--line:#dce3e9;--pale:#f2f6f8}
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#e8edf1;color:var(--ink);font-family:Inter,Arial,"Segoe UI",sans-serif;line-height:1.42}
+.sheet{position:relative;isolation:isolate;max-width:850px;min-height:650px;margin:0 auto;padding:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 24px 70px #12203420}
+.hero{position:relative;overflow:hidden;background:#101a29;color:#f3f7fb;padding:32px 38px 29px}.hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #c4ff4d2b;border-radius:50%;right:-75px;top:-145px;box-shadow:0 0 0 28px #c4ff4d08,0 0 0 60px #c4ff4d06;z-index:-1}
+.brand{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#dbe5ef}.symbol{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:var(--lime);color:#101a29;font-size:11px;font-weight:1000;letter-spacing:-1px}.title{font-size:39px;line-height:.98;letter-spacing:-1.8px;margin:20px 0 12px;font-weight:950}.title span{color:var(--lime)}.subtitle{max-width:650px;color:#b4c1d0;font-size:13px;margin:0}.main{padding:26px 38px 27px}.label{font-size:10px;font-weight:950;letter-spacing:.14em;text-transform:uppercase;color:#64822d;margin-bottom:12px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.step{border:1px solid var(--line);border-radius:13px;padding:14px 13px;min-height:112px;background:#fff}.num{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--lime);color:#15202d;font-size:11px;font-weight:950;margin-bottom:12px}.step h2{font-size:13px;line-height:1.2;margin:0 0 6px}.step p{font-size:10.5px;color:var(--muted);margin:0}.prompt{margin-top:16px;display:grid;grid-template-columns:155px 1fr;gap:18px;align-items:start;background:var(--pale);border:1px solid #e2e8ed;border-radius:14px;padding:17px}.prompt h2{margin:0;font-size:17px;line-height:1.1;letter-spacing:-.4px}.prompt .sub{font-size:10px;color:var(--muted);margin-top:7px}.quote{border-left:3px solid #8fc42d;padding:2px 0 2px 12px;font-size:11.2px;line-height:1.5;color:#2e3a49}.bottom{display:grid;grid-template-columns:1fr 94px;gap:14px;align-items:center;margin-top:17px;padding-top:15px;border-top:1px solid var(--line)}.check{font-size:11px;color:#49596c}.check strong{color:#111a28}.reminder{margin-top:7px;font-size:10.5px;font-weight:850;color:#587c1f}.qr{width:91px;height:91px;object-fit:contain;border:1px solid #dfe5eb;border-radius:10px;padding:4px;background:white}.qr-label{font-size:8.5px;color:#6e7a89;text-align:center;margin-top:4px}.print{position:fixed;right:18px;bottom:18px;background:var(--lime);color:#101a29;border:0;border-radius:12px;padding:12px 15px;font-size:12px;font-weight:900;cursor:pointer;box-shadow:0 6px 22px #15203425}.print:hover{transform:translateY(-1px)}
+@media(max-width:640px){body{padding:0;background:#fff}.sheet{border-radius:0;min-height:0}.hero{padding:27px 23px 24px}.title{font-size:34px}.main{padding:22px 22px 26px}.steps{grid-template-columns:1fr}.step{min-height:0;display:grid;grid-template-columns:28px 1fr;column-gap:11px;align-items:start}.num{grid-row:span 2;margin:0}.step h2{margin-top:2px}.prompt{grid-template-columns:1fr;gap:10px;padding:15px}.bottom{grid-template-columns:1fr 76px}.qr{width:74px;height:74px}.print{position:static;display:block;margin:13px auto}}
+@media print{@page{size:A4;margin:10mm}body{padding:0;background:#fff}.sheet{max-width:none;min-height:0;border-radius:0;box-shadow:none}.hero{padding:8mm 9mm 7mm;print-color-adjust:exact;-webkit-print-color-adjust:exact}.hero:after{print-color-adjust:exact;-webkit-print-color-adjust:exact}.title{font-size:28px;margin:13px 0 8px}.subtitle{font-size:10.5px}.main{padding:7mm 9mm}.steps{gap:7px}.step{min-height:0;padding:10px}.step h2{font-size:11px}.step p{font-size:9px}.num{width:24px;height:24px;margin-bottom:8px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.prompt{margin-top:10px;padding:12px;grid-template-columns:125px 1fr;gap:12px}.prompt h2{font-size:14px}.prompt .sub{font-size:9px}.quote{font-size:9.5px}.bottom{margin-top:11px;padding-top:10px;grid-template-columns:1fr 82px}.qr{width:79px;height:79px}.check{font-size:9.5px}.reminder{font-size:9px}.print{display:none!important}}
+/* Обновлённый макет памятки */
+body{background:#eef1f8;color:#18243b;font-family:Inter,ui-sans-serif,Arial,"Segoe UI",sans-serif;line-height:1.45}
+.sheet{max-width:900px;min-height:0;border:1px solid #e3e8f1;border-radius:22px;box-shadow:0 28px 80px #283a5a18}
+.hero{padding:34px 42px 31px;background:linear-gradient(120deg,#25294c 0%,#35477b 65%,#28777c 100%)}
+.hero:after{z-index:0;border-color:#a8edda40;box-shadow:0 0 0 30px #a8edda10,0 0 0 64px #a8edda08}
+.brand,.title,.subtitle{position:relative;z-index:1}.symbol{background:#a8edda;color:#1f3441}.title{font-size:42px;letter-spacing:-1.9px}.title span{color:#a8edda}.subtitle{font-size:13px;line-height:1.6;max-width:650px}
+.main{padding:28px 42px 30px}.label{font-size:10px;color:#6657e8;letter-spacing:.13em;margin:0 0 12px}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:0 0 21px}.formula-item{border:1px solid #e1e6f0;border-radius:12px;padding:11px 12px;background:#f8f9fd}.formula-item strong{display:block;color:#25324a;font-size:11px;margin-bottom:3px}.formula-item span{display:block;color:#738097;font-size:9.5px;line-height:1.4}
+.steps{gap:10px}.step{border-color:#e2e7f0;border-radius:14px;padding:13px;min-height:106px;box-shadow:0 5px 18px #273a5b08}.num{background:#eeedff;color:#6657e8;margin-bottom:9px}.step:nth-child(2) .num{background:#e2f7ee;color:#258660}.step:nth-child(3) .num{background:#fff1e5;color:#c67836}.step h2{font-size:12px;color:#202e48}.step p{font-size:9.5px;line-height:1.45}
+.prompt{margin-top:18px;grid-template-columns:155px 1fr;gap:15px;background:#f2f3ff;border-color:#e4e3f7;border-radius:15px;padding:16px}.prompt h2{font-size:16px;color:#202e48}.prompt .sub{font-size:9.5px}.quote{border-left-color:#6657e8;color:#35425b;font-size:10.5px;line-height:1.55}
+.bottom{grid-template-columns:1fr 76px;gap:17px;align-items:start;margin-top:16px;padding-top:14px}.check{font-size:10px;line-height:1.55;color:#59677d}.check strong{color:#202e48}.reminder{font-size:10px;color:#27865f}.qr{width:72px;height:72px;border-radius:9px}.qr-label{font-size:8px}.print{background:#6657e8;border-radius:12px;padding:11px 16px;color:#fff;font-weight:800}
+.checklist-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.checklist-mini span{display:flex;align-items:flex-start;gap:6px;color:#53627a;font-size:9px;line-height:1.4}.checklist-mini b{color:#27865f}
+@media(max-width:640px){body{padding:0}.sheet{border:0;border-radius:0}.hero{padding:27px 23px 24px}.main{padding:22px}.formula{grid-template-columns:1fr 1fr}.checklist-mini{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.step{display:grid;grid-template-columns:28px 1fr;column-gap:11px;align-items:start}.num{grid-row:span 2;margin:0}.step h2{margin-top:2px}}
+@media print{@page{size:A4;margin:8mm}body{padding:0;background:#fff;font-size:10pt}.sheet{max-width:none;width:100%;min-height:0;border:0;border-radius:0;box-shadow:none}.hero{padding:7mm 8mm 6mm;print-color-adjust:exact;-webkit-print-color-adjust:exact}.hero:after{print-color-adjust:exact;-webkit-print-color-adjust:exact}.title{font-size:27px;margin:12px 0 8px}.subtitle{font-size:9.5px}.main{padding:6mm 8mm}.label{margin-bottom:8px}.formula{gap:6px;margin-bottom:13px}.formula-item{padding:8px}.formula-item strong{font-size:9px}.formula-item span{font-size:8px}.steps{gap:6px}.step{min-height:0;padding:9px}.step h2{font-size:9.5px}.step p{font-size:8px}.num{width:23px;height:23px;font-size:9px;margin-bottom:6px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.prompt{margin-top:11px;padding:10px;grid-template-columns:115px 1fr;gap:9px}.prompt h2{font-size:12px}.prompt .sub{font-size:8px}.quote{font-size:8.5px}.bottom{margin-top:10px;padding-top:9px;grid-template-columns:1fr 68px}.qr{width:64px;height:64px}.check{font-size:8px}.reminder{font-size:8px}.qr-label{font-size:7px}.checklist-mini{gap:5px;margin-top:7px}.checklist-mini span{font-size:7.5px}.print{display:none!important}article,.prompt,.bottom,.formula-item{break-inside:avoid}}
+@media print{.steps{grid-template-columns:repeat(3,1fr)}.formula{grid-template-columns:repeat(4,1fr)}.checklist-mini{grid-template-columns:repeat(3,1fr)}}
+/* Тёмная тема на экране; для бумаги ниже возвращается светлая палитра. */
+body{background:#0b1019;color:#edf2fa}
+.sheet{background:#141d2a;border-color:#29374a;box-shadow:0 28px 80px #0007}
+.hero{background:linear-gradient(120deg,#171d32 0%,#253b68 65%,#17545a 100%)}
+.hero:after{border-color:#a8edda40;box-shadow:0 0 0 30px #a8edda0d,0 0 0 64px #a8edda07}
+.brand{color:#d5deec}.symbol{background:#a8edda;color:#1f3441}.title{color:#f2f5fb}.title span{color:#a8edda}.subtitle{color:#c0cbda}
+.label{color:#b2a4ff}.formula-item{background:#192434;border-color:#304056}.formula-item strong{color:#ebf0f7}.formula-item span{color:#a3b0c3}
+.step{background:#182332;border-color:#304056;box-shadow:0 5px 18px #0003}.step h2{color:#eef2f8}.step p{color:#aab7c9}.num{background:#2a2946;color:#c0b4ff}.step:nth-child(2) .num{background:#1c3937;color:#78d8c3}.step:nth-child(3) .num{background:#392e29;color:#ffc18a}
+.prompt{background:#1b2036;border-color:#333752}.prompt h2{color:#f0f3fa}.prompt .sub{color:#a2aec2}.quote{border-color:#a393ff;color:#dbe3ef}
+.checklist-mini span{color:#b3bfd0}.checklist-mini b{color:#8ce0bc}.bottom{border-color:#2d394b}.check{color:#b1bdce}.check strong{color:#f0f3fa}.reminder{color:#8ce0bc}.qr{background:#fff;border-color:#3c485b}.qr-label{color:#a3b0c3}.print{background:#8d7cff;color:#111525}
+@media print{body{background:#fff;color:#18243b}.sheet{background:#fff;border-color:#fff;box-shadow:none}.formula-item{background:#f8f9fd;border-color:#e1e6f0}.formula-item strong{color:#25324a}.formula-item span{color:#58677e}.step{background:#fff;border-color:#e2e7f0;box-shadow:none}.step h2{color:#202e48}.step p{color:#59677d}.prompt{background:#f2f3ff;border-color:#e4e3f7}.prompt h2{color:#202e48}.prompt .sub{color:#66748b}.quote{color:#35425b}.checklist-mini span,.check{color:#49596c}.check strong{color:#18243b}.reminder{color:#27865f}.qr-label{color:#6e7a89}}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <header class="hero">
+    <div class="brand"><span class="symbol">ИИ</span> ИИ ИЩИ · ПАМЯТКА</div>
+    <h1 class="title">Спрашивай точно.<br><span>Проверяй ответ.</span></h1>
+    <p class="subtitle">ИИ помогает разобраться в теме, но может ошибаться. Хороший запрос задаёт направление, а проверка источников помогает не принять выдумку за факт.</p>
+  </header>
+  <div class="main">
+    <div class="label">Формула полезного запроса</div>
+    <section class="formula" aria-label="Четыре части хорошего запроса">
+      <div class="formula-item"><strong>1. Тема</strong><span>О чём нужно узнать?</span></div>
+      <div class="formula-item"><strong>2. Цель</strong><span>Для чего нужен ответ?</span></div>
+      <div class="formula-item"><strong>3. Формат</strong><span>Список, план или таблица?</span></div>
+      <div class="formula-item"><strong>4. Источники</strong><span>Где проверить сведения?</span></div>
+    </section>
+    <div class="label">Перед отправкой — три шага</div>
+    <section class="steps">
+      <article class="step"><span class="num">01</span><h2>Объясни контекст</h2><p>Укажи уровень знаний, ограничения и то, что уже известно.</p></article>
+      <article class="step"><span class="num">02</span><h2>Попроси не выдумывать</h2><p>Запроси ссылки на первоисточники и отметку о сомнительных фактах.</p></article>
+      <article class="step"><span class="num">03</span><h2>Проверь важное</h2><p>Открой ссылки, проверь автора и дату, сравни с другим надёжным источником.</p></article>
+    </section>
+    <section class="prompt">
+      <div><h2>Шаблон запроса</h2><div class="sub">Замени текст в скобках.</div></div>
+      <div class="quote">«Объясни [тему] простыми словами для [кого/какой цели]. Оформи ответ как [формат]. Приведи ссылки на надёжные источники, не выдумывай факты и отдельно укажи, что требует проверки».</div>
+    </section>
+    <div class="checklist-mini" aria-label="Проверка ответа">
+      <span><b>✓</b> Ссылка открывается и ведёт к указанному источнику.</span>
+      <span><b>✓</b> Автор, дата и доказательства понятны.</span>
+      <span><b>✓</b> Важный факт подтверждается ещё одним источником.</span>
+    </div>
+    <section class="bottom">
+      <div><div class="check"><strong>Береги личные данные:</strong> не отправляй ИИ пароли, данные карт, адрес и документы. Если ответ звучит уверенно, это ещё не делает его верным.</div><div class="reminder">ИИ — помощник. Ответы и ссылки нужно проверять.</div></div>
+      <div><img class="qr" src="qr-placeholder.svg" alt="QR-код станет доступен после публикации сайта"><div class="qr-label">Полная версия по QR</div></div>
+    </section>
+  </div>
+</main>
+<button class="print" onclick="window.print()">Печать / сохранить в PDF</button>
+</body>
+</html>
